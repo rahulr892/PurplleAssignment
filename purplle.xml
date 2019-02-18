@@ -4,7 +4,12 @@
     <test name="Purplle - App Crash Scenario">
         <parameter name="platform" value="Android"/>
         <classes>
-            <class name="com.app.purplle.tests.AppCrash"/>
+            <class name="com.app.purplle.tests.AppCrash">
+            <methods>
+                <include name="app_Crash_Scenario"/>
+                <include name="clicking_Banner_And_Checking_Logs"/>
+            </methods>
+            </class>
         </classes>
     </test>
 
