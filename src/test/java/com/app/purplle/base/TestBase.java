@@ -87,16 +87,16 @@ public class TestBase {
         if (appiumDriver != null) {
             hasAppCrashed();
 
-            if (testResult.getStatus() == ITestResult.SUCCESS) {
-                ExtentUtil.fetchTest().log(Status.PASS, MarkupHelper.createLabel("TEST PASSED", ExtentColor.GREEN));
-
-            } else if (testResult.getStatus() == ITestResult.FAILURE) {
+            if (testResult.getStatus() == ITestResult.FAILURE) {
                 ExtentUtil.fetchTest().log(Status.INFO, testResult.getThrowable());
                 ExtentUtil.fetchTest().log(Status.FAIL, MarkupHelper.createLabel("TEST FAILED", ExtentColor.RED));
 
             } else if (testResult.getStatus() == ITestResult.SKIP) {
                 ExtentUtil.fetchTest().log(Status.INFO, testResult.getThrowable());
                 ExtentUtil.fetchTest().log(Status.SKIP, MarkupHelper.createLabel("TEST SKIPPED", ExtentColor.ORANGE));
+
+            } else if (testResult.getStatus() == ITestResult.SUCCESS) {
+                ExtentUtil.fetchTest().log(Status.PASS, MarkupHelper.createLabel("TEST PASSED", ExtentColor.GREEN));
 
             }
             appiumDriver.quit();
@@ -127,8 +127,7 @@ public class TestBase {
         Boolean crashTextAppeared = appiumDriver.findElements(alertTitle).size() > 0;
         if (crashTextAppeared) {
             if (appiumDriver.findElement(alertTitle).getAttribute("text").equals("Purplle has stopped")) {
-                ExtentUtil.fetchTest().log(Status.FATAL, "App has crashed");
-                //Assert.fail("App Crash Occurred");
+                ExtentUtil.fetchTest().log(Status.FATAL, "APP CRASHED");
             }
         }
     }
