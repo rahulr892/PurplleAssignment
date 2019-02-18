@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Purplle Automation Suite">
+
+    <test name="Purplle - App Crash Scenario">
+        <parameter name="platform" value="Android"/>
+        <classes>
+            <class name="com.app.purplle.tests.AppCrash"/>
+        </classes>
+    </test>
+
+</suite>
+

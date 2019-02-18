@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+    <test name="Interview(failed)">
+        <classes>
+            <class name="com.app.purplle.tests.AppCrash">
+                <methods>
+                    <include name="startReporting"/>
+                    <include name="app_Crash_Scenario" invocation-numbers="0"/>
+                    <include name="tearDown"/>
+                    <include name="endReporting"/>
+                    <include name="setUp"/>
+                </methods>
+            </class> <!-- com.app.purplle.tests.AppCrash -->
+        </classes>
+    </test> <!-- Interview(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

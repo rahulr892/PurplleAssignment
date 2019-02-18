@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-02-18T05:48:00Z" name="Default Suite" finished-at="2019-02-18T05:49:02Z" duration-ms="61824">
+    <groups>
+    </groups>
+    <test started-at="2019-02-18T05:48:00Z" name="Interview" finished-at="2019-02-18T05:49:02Z" duration-ms="61824">
+      <class name="com.app.purplle.tests.AppCrash">
+        <test-method is-config="true" signature="startReporting()[pri:0, instance:com.app.purplle.tests.AppCrash@1bd4fdd]" started-at="2019-02-18T11:18:00Z" name="startReporting" finished-at="2019-02-18T11:18:00Z" duration-ms="567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReporting -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.app.purplle.tests.AppCrash@1bd4fdd]" started-at="2019-02-18T11:18:00Z" name="setUp" finished-at="2019-02-18T11:18:28Z" duration-ms="27352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clicking_Banner_And_Checking_Logs()[pri:0, instance:com.app.purplle.tests.AppCrash@1bd4fdd]" started-at="2019-02-18T11:18:28Z" name="clicking_Banner_And_Checking_Logs" finished-at="2019-02-18T11:18:59Z" duration-ms="31214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clicking_Banner_And_Checking_Logs -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.app.purplle.tests.AppCrash@1bd4fdd]" started-at="2019-02-18T11:18:59Z" name="tearDown" finished-at="2019-02-18T11:19:02Z" duration-ms="3229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clicking_Banner_And_Checking_Logs status=SUCCESS method=AppCrash.clicking_Banner_And_Checking_Logs()[pri:0, instance:com.app.purplle.tests.AppCrash@1bd4fdd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReporting()[pri:0, instance:com.app.purplle.tests.AppCrash@1bd4fdd]" started-at="2019-02-18T11:19:07Z" name="endReporting" finished-at="2019-02-18T11:19:07Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReporting -->
+      </class> <!-- com.app.purplle.tests.AppCrash -->
+    </test> <!-- Interview -->
+  </suite> <!-- Default Suite -->
+</testng-results>

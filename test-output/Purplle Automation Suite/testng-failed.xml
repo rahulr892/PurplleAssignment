@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Purplle Automation Suite]" guice-stage="DEVELOPMENT">
+    <test name="Purplle - App Crash Scenario(failed)">
+        <parameter name="platform" value="Android"/>
+        <classes>
+            <class name="com.app.purplle.tests.AppCrash">
+                <methods>
+                    <include name="app_Crash_Scenario"/>
+                    <include name="tearDown"/>
+                    <include name="setUp"/>
+                </methods>
+            </class> <!-- com.app.purplle.tests.AppCrash -->
+        </classes>
+    </test> <!-- Purplle - App Crash Scenario(failed) -->
+</suite> <!-- Failed suite [Purplle Automation Suite] -->
